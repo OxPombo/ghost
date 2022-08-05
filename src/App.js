@@ -1,11 +1,11 @@
 import './App.css';
-import Emerge from './components/Emerge'
+import RenderizacaoCondicional from './components/RenderizacaoCondicional';
 
 function App() {
   return (
     
     <div>
-      <Emerge />
+      <RenderizacaoCondicional />
     </div>
   );
 }

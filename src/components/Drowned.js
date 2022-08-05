@@ -7,6 +7,7 @@ function Drowned () {
          <img al="bau" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
 
          <p> Você encontrou o tesouro </p> 
+         <button > </button>
         </>
     )
 }
