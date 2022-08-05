@@ -6,32 +6,30 @@ function Emerge (){
     const [emergeDrowned, setEmergeDrowned] = useState(false)
     
     function emergeRescuedFile (){
-        emergeRescuedFile (setEmergeDrowned, emergeDrowned)
-        
+        setEmergeDrowned (!emergeDrowned)
+        console.log('bruh')
     }
 
     function emergirTesouro () {
-        emergeRescuedFile (true)
+        setEmergeDrowned  = useState/* Possível problema aqui */
+        console.log('teste')
     }
     return(
         <>
             <div>
                 <h1> Deeper (Renderização condicional) </h1>
-
-                <button 
-                type="submit" 
-                onClick={emergeRescuedFile}> Salve o afogado!!!
-                </button>
-
             </div>
+
             {emergeRescuedFile && (
                 <div>
-                 <button onClick={emergirTesouro}>
+                 <button onClick={emergirTesouro} >
                     Subir
                  </button>
                 </div>
             )
             }
+            
+            
         </>
     )
 }
